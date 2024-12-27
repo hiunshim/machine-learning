@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+keras
+tensorflow
+scikit-learn
+numpy
+pillow
+scikit-image
+python-multipart

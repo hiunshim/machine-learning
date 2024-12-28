@@ -1,8 +1,10 @@
-from fastapi import FastAPI, File, UploadFile, HTTPException
+import io
+
+import numpy as np
+from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.responses import JSONResponse
 from PIL import Image
-import numpy as np
-import io
+
 from model import load_model, predict_digit
 
 app = FastAPI(

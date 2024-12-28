@@ -1,10 +1,10 @@
-from keras.models import Sequential, load_model as keras_load_model
-from keras.layers import Dense, Flatten, Conv2D, MaxPooling2D
-from keras.utils import to_categorical
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
-from keras.datasets import mnist
 import numpy as np
+from sklearn.metrics import accuracy_score
+from tensorflow.keras.datasets import mnist
+from tensorflow.keras.layers import Conv2D, Dense, Flatten, MaxPooling2D
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.models import load_model as keras_load_model
+from tensorflow.keras.utils import to_categorical
 
 MODEL_PATH = "digit_model.h5"
 
